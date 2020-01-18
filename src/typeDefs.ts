@@ -5,8 +5,9 @@ export const typeDefs = gql `
     id: ID!
     email: String!
   }
+  
   type Query {
-    hello: String!
+    currentUser: User
   }
 
   type Mutation {
