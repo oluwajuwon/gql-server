@@ -1,4 +1,4 @@
-import { IResolvers } from "apollo-server-express";
+import { IResolvers } from 'graphql-tools';
 import * as bcrypt from 'bcryptjs';
 import { User } from './entity/User';
 
