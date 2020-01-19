@@ -42,6 +42,24 @@ export interface RegisterMutationVariables {
 /* eslint-disable */
 // This file was automatically generated and should not be edited.
 
+// ====================================================
+// GraphQL query operation: GetCurrentUser
+// ====================================================
+
+export interface GetCurrentUser_currentUser {
+  __typename: "User";
+  id: string;
+  email: string;
+}
+
+export interface GetCurrentUser {
+  currentUser: GetCurrentUser_currentUser | null;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// This file was automatically generated and should not be edited.
+
 //==============================================================
 // START Enums and Input Objects
 //==============================================================

@@ -25,7 +25,10 @@ const startServer = async () => {
         saveUninitialized: false,
     }))
 
-    server.applyMiddleware({ app })
+    server.applyMiddleware({ app, cors: {
+        credentials: true ,
+        origin: 'http://localhost:3001',
+    } })
     // Additional middleware can be mounted at this point to run before Apollo.
     app.listen({ port: 4000 }, () => {
         console.log(`server running at http://localhost:4000${server.graphqlPath}`)
